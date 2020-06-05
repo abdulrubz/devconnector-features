@@ -3,7 +3,7 @@ Feature: Comments feature
     Comments can be added to posts
 
     Scenario: View comments on a post
-        And click on Comments button of a post
+        When I click on Comments button of a post
         Then I should see the comments to the post 
 
     Scenario: Add a comments
