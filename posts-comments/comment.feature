@@ -15,3 +15,8 @@ Feature: Comments feature
         When I go to Comments section of a post
         And I click on the delete button of the comment
         Then the comment must be deleted 
+
+    Scenario: Can't delete comment made by others
+        When I go to comments section of a post
+        And I see a comment made by other users
+        Then I should not see a delete button
